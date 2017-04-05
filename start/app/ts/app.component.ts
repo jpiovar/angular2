@@ -22,8 +22,16 @@ export class AppComponent {
     this.videos = [
       new Video(1,"Janko","code1","video of Janko"),
       new Video(2,"Jozko","code2","video of Jozko")
-    ]
+    ];
+    this.message = 'aaaaallll';
   }
   
-  
+
+  onChange(newValue) { debugger;
+    console.log(newValue);
+    this.message = newValue;  
+    
+  }
+
+
 }

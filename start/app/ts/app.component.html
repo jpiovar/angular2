@@ -1,2 +1,4 @@
 <h1>basic component 1 {{ okvariable }}</h1>
 <component-playlist [videos]="videos"> </component-playlist>
+<input [(ngModel)]="message" (ngModelChange)="onChange($event)">
+<p>{{message}}</p>
