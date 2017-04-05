@@ -27,7 +27,10 @@ export class AppComponent {
     this.message = 'aaaaallll';
   }
   
-
+  ngOnInit(){
+    this.message = 'ou je';
+  }
+  
   onChange(newValue) { debugger;
     console.log(newValue);
     this.message = newValue;  
