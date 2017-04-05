@@ -12,9 +12,13 @@ import {Video} from './video';
 })
 
 export class PlaylistComponent {
-
+  show: boolean = true;
   onSelect(vid:Video){
     console.log(JSON.stringify(vid));
+  }
+  
+  constructor(){
+    this.show = true;
   }
 
 }
