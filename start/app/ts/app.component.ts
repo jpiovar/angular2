@@ -3,6 +3,7 @@ import {Config} from './config.service';
 import {PlaylistComponent} from './playlist.component';
 import {Video} from './video';
 
+
 @Component({
     selector: 'component-basic-1', 
     //template: '<h1>bbbb111 {{ okvariable }}</h1>'   
