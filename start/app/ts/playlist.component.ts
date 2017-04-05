@@ -20,5 +20,20 @@ export class PlaylistComponent {
   constructor(){
     this.show = true;
   }
+  
+  totalItems(){
+    return this.videos.length;
+  }
+  
+  totalItemsFor(){
+    let sum = 0;
+    
+    for(let item of this.videos){
+      sum++;
+    }
+    
+    return sum;
+    
+  }
 
 }
