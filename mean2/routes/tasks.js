@@ -35,13 +35,15 @@ router.get('/tasks', function(req, res, next){
 // get single task
 router.get('/task/:id', function(req, res, next){
     //res.send('TASK API');
+    var tempId = Number(req.params.id);
+
     MongoClient.connect("mongodb://localhost:27017/mean", function (err, db) {
 
       if(err) {reject(err); return;}
 
-      db.collection('Record', function (err, collection) {
+      db.collection('Record', function (err, collection) { 
 
-        collection.findOne({id:2}, function(err, item) {
+        collection.findOne({id:tempId}, function(err, item) {
 
           if(err) {
             reject(err); return;
