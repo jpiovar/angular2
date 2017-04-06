@@ -18,7 +18,7 @@ export class AppComponent {
   //okvariable = 'ok variable value';
   okvariable = Config.MAIN_HEADING;
   videos:Array<Video>;
-  //message:string = "popo";
+  message:string = "popo";
   constructor(){
     this.videos = [
       new Video(1,"Janko","code1","video of Janko"),
